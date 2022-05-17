@@ -1,4 +1,4 @@
-package com.mashibing.dp.singleton;
+package com.mashibing.dp.singleton_danli;
 
 /**
  * 静态内部类方式

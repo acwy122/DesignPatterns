@@ -1,4 +1,4 @@
-package com.mashibing.dp.singleton;
+package com.mashibing.dp.singleton_danli;
 
 /**
  * 跟01是一个意思

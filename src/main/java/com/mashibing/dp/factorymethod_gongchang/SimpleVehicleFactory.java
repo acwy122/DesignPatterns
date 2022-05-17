@@ -1,4 +1,4 @@
-package com.mashibing.dp.factorymethod;
+package com.mashibing.dp.factorymethod_gongchang;
 
 /**
  * 简单工厂的可扩展性不好

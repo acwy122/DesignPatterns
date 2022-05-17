@@ -1,4 +1,4 @@
-package com.mashibing.dp.factorymethod;
+package com.mashibing.dp.factorymethod_gongchang;
 
 public class Plane implements Moveable {
     public void go() {
