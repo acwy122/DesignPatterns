@@ -1,4 +1,4 @@
-package com.mashibing.dp.strategy;
+package com.mashibing.dp.strategy_celue;
 
 public class DogComparator implements Comparator<Dog> {
     @Override
