@@ -1,6 +1,6 @@
-package com.mashibing.dp.state.v2;
+package com.mashibing.dp.state_1.v2;
 
-public class MMNervousState extends MMState {
+public class MMSadState extends MMState {
     @Override
     void smile() {
 

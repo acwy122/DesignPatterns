@@ -1,4 +1,4 @@
-package com.mashibing.dp.state.thread;
+package com.mashibing.dp.state_1.thread;
 
 public class NewState extends ThreadState_ {
     private Thread_ t;

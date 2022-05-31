@@ -1,4 +1,4 @@
-package com.mashibing.dp.state.v2;
+package com.mashibing.dp.state_1.v2;
 
 /**
  * 当增加新的状态时非常不方便
