@@ -2,6 +2,7 @@ package com.mashibing.dp.strategy_celue;
 
 public class Sorter<T> {
 
+    //选择排序算法
     public void sort(T[] arr, Comparator<T> comparator) {
         for(int i=0; i<arr.length - 1; i++) {
             int minPos = i;
