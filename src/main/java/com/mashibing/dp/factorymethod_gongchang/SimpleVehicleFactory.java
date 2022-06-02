@@ -12,4 +12,6 @@ public class SimpleVehicleFactory {
     public Broom createBroom() {
         return new Broom();
     }
+
+    public Plane createPlane() { return new Plane(); }
 }
