@@ -1,4 +1,4 @@
-package com.mashibing.dp.abstractfactory;
+package com.mashibing.dp.abstractfactory_jiandangongchang;
 
 public class Car extends Vehicle{
 

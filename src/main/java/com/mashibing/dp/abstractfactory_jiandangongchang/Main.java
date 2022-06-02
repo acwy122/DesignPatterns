@@ -1,4 +1,4 @@
-package com.mashibing.dp.abstractfactory;
+package com.mashibing.dp.abstractfactory_jiandangongchang;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +10,11 @@ public class Main {
         w.shoot();
         Food b = f.createFood();
         b.printName();
+
+        AbastractFactory f2 = new MagicFactory();
+
+        Vehicle broom = f2.createVehicle();
+        broom.go();
+
     }
 }

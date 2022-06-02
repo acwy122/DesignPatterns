@@ -1,5 +1,8 @@
-package com.mashibing.dp.abstractfactory;
+package com.mashibing.dp.abstractfactory_jiandangongchang;
 
+/**
+ * 魔法世界
+ */
 public class MagicFactory extends AbastractFactory {
     @Override
     Food createFood() {

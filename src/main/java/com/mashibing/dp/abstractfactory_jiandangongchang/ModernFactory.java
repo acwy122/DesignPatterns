@@ -1,6 +1,8 @@
-package com.mashibing.dp.abstractfactory;
+package com.mashibing.dp.abstractfactory_jiandangongchang;
 
-
+/**
+ * 现实世界
+ */
 public class ModernFactory extends AbastractFactory {
     @Override
     Food createFood() {
