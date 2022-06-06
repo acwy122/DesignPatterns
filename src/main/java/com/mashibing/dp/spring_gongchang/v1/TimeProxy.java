@@ -1,4 +1,4 @@
-package com.mashibing.dp.spring.v1;
+package com.mashibing.dp.spring_gongchang.v1;
 
 public class TimeProxy {
 
