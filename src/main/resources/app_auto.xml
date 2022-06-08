@@ -18,8 +18,8 @@
 
     <aop:aspectj-autoproxy/>
 
-    <bean id="tank" class="com.mashibing.dp.spring_gongchang.v2.Tank"/>
-    <bean id="timeProxy" class="com.mashibing.dp.spring_gongchang.v2.TimeProxy"/>
+    <bean id="tank" class="com.mashibing.dp.spring_ioc.v2.Tank"/>
+    <bean id="timeProxy" class="com.mashibing.dp.spring_ioc.v2.TimeProxy"/>
 
 <!--    <aop:config>-->
 <!--        <aop:aspect id="time" ref="timeProxy">-->
