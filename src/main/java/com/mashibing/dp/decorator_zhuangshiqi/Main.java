@@ -1,4 +1,4 @@
-package com.mashibing.dp.decorator;
+package com.mashibing.dp.decorator_zhuangshiqi;
 
 import java.io.*;
 
