@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v2;
+package com.mashibing.dp.observer_guanchazhe.v2;
 
 /**
  * 面向对象的傻等

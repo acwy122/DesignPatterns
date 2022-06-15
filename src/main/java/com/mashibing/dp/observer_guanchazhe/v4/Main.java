@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v4;
+package com.mashibing.dp.observer_guanchazhe.v4;
 
 /**
  * 加入多个观察者

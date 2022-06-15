@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v9;
+package com.mashibing.dp.observer_guanchazhe.v9;
 
 import java.awt.Button;
 import java.awt.Frame;

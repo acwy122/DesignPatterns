@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v7;
+package com.mashibing.dp.observer_guanchazhe.v8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * 有很多时候，观察者需要根据事件的具体情况来进行处理
  * 大多数时候，我们处理事件的时候，需要事件源对象
+ * 事件也可以形成继承体系
  */
 
 class Child {
@@ -16,6 +17,10 @@ class Child {
         observers.add(new Dad());
         observers.add(new Mum());
         observers.add(new Dog());
+        observers.add((e)->{
+            System.out.println("ppp");
+        });
+        //hook callback function
     }
 
 
@@ -34,7 +39,11 @@ class Child {
     }
 }
 
-class wakeUpEvent{
+abstract class Event<T> {
+    abstract T getSource();
+}
+
+class wakeUpEvent extends Event<Child>{
     long timestamp;
     String loc;
     Child source;
@@ -43,6 +52,11 @@ class wakeUpEvent{
         this.timestamp = timestamp;
         this.loc = loc;
         this.source = source;
+    }
+
+    @Override
+    Child getSource() {
+        return source;
     }
 }
 

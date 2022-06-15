@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v5;
+package com.mashibing.dp.observer_guanchazhe.v5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ class Child {
     }
 }
 
-interface Observer {
+interface Observer {//统一实现Observer观察者
     void actionOnWakeUp();
 }
 

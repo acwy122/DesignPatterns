@@ -1,4 +1,4 @@
-package com.mashibing.dp.observer.v3;
+package com.mashibing.dp.observer_guanchazhe.v3;
 
 /**
  * 加入观察者
@@ -6,7 +6,7 @@ package com.mashibing.dp.observer.v3;
 
 class Child {
     private boolean cry = false;
-    private Dad d = new Dad();
+    private Dad d = new Dad();//假如观察者
 
     public boolean isCry() {
         return cry;
@@ -17,7 +17,7 @@ class Child {
         d.feed();
     }
 }
-
+//观察者
 class Dad {
     public void feed() {
         System.out.println("dad feeding...");
