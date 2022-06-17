@@ -1,9 +1,13 @@
-package com.mashibing.dp.flyweight;
+package com.mashibing.dp.flyweight_xiangyuan;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * 享元模式
+ * 共享元数据
+ */
 class Bullet{
     public UUID id = UUID.randomUUID();
     boolean living = true;

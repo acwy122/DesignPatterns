@@ -1,4 +1,4 @@
-package com.mashibing.dp.flyweight;
+package com.mashibing.dp.flyweight_xiangyuan;
 
 public class TestString {
     public static void main(String[] args) {
