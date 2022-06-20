@@ -1,4 +1,4 @@
-package com.mashibing.dp.proxy.v04;
+package com.mashibing.dp.proxy_daili.v05;
 
 import java.util.Random;
 
@@ -7,6 +7,7 @@ import java.util.Random;
  * 最简单的办法：修改代码，记录时间
  * 问题2：如果无法改变方法源码呢？
  * 用继承？
+ * v05:使用代理
  */
 public class Tank implements Movable {
 
@@ -24,15 +25,22 @@ public class Tank implements Movable {
     }
 
     public static void main(String[] args) {
-        new Tank2().move();
+        new TankTimeProxy(new Tank()).move();
     }
 }
 
-class Tank2 extends Tank {
+class TankTimeProxy implements Movable {
+
+    Tank tank;
+
+    public TankTimeProxy(Tank tank) {
+        this.tank = tank;
+    }
+
     @Override
     public void move() {
         long start = System.currentTimeMillis();
-        super.move();
+        tank.move();
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }

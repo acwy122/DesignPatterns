@@ -1,5 +1,4 @@
-package com.mashibing.dp.proxy.v07;
-
+package com.mashibing.dp.proxy_daili.v06;
 
 import java.util.Random;
 
@@ -11,8 +10,6 @@ import java.util.Random;
  * v05:使用代理
  * v06:代理有各种类型
  * 问题：如何实现代理的各种组合？继承？Decorator?
- * v07:代理的对象改成Movable类型-越来越像decorator了
- *
  */
 public class Tank implements Movable {
 
@@ -30,48 +27,27 @@ public class Tank implements Movable {
     }
 
     public static void main(String[] args) {
-
-        Tank t = new Tank();
-        TankTimeProxy ttp = new TankTimeProxy(t);
-        TankLogProxy tlp = new TankLogProxy(ttp);
-        tlp.move();
-
-//        new TankLogProxy(
-//                new TankTimeProxy(
-//                        new Tank()
-//                )
-//        ).move();
+        new TankTimeProxy().move();
     }
 }
 
 class TankTimeProxy implements Movable {
-    Movable m;
-
-    public TankTimeProxy(Movable m) {
-        this.m = m;
-    }
-
+    Tank tank;
     @Override
     public void move() {
         long start = System.currentTimeMillis();
-        m.move();
+        tank.move();
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }
 }
 
 class TankLogProxy implements Movable {
-    Movable m;
-
-    public TankLogProxy(Movable m) {
-        this.m = m;
-    }
-
+    Tank tank;
     @Override
     public void move() {
         System.out.println("start moving...");
-        m.move();
-        long end = System.currentTimeMillis();
+        tank.move();
         System.out.println("stopped!");
     }
 }

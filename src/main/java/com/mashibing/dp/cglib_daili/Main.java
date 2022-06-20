@@ -1,4 +1,4 @@
-package com.mashibing.dp.cglib;
+package com.mashibing.dp.cglib_daili;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
